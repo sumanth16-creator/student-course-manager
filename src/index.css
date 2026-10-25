@@ -1,0 +1,32 @@
+/* index.css - small custom styles added on top of Bootstrap. */
+
+/* Soft grey page background so the white cards and tables stand out. */
+body {
+  background-color: #f4f6f9;
+}
+
+/* Brand name in the navigation bar. */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Dashboard cards lift slightly when the mouse is over them. */
+.stat-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+/* Big number shown on the dashboard cards. */
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Keep the Edit / Delete buttons on one line inside table cells. */
+.table-actions {
+  white-space: nowrap;
+}
